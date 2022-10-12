@@ -8,8 +8,8 @@ class DHTSensor {
   public:  
     DHTSensor(); 
     DHTSensor(String tagTemp, String tagHumd, int pinDHT, int DHT_TYPE);
-    String getTempName();  //temperature
-    String getHumdName();  //humidity
+    String getTempName();  
+    String getHumdName();  
     float captureTemperatureValue();
     float captureHumidityValue();
   
