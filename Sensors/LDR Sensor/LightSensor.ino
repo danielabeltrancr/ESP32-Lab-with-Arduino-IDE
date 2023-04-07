@@ -1,6 +1,10 @@
+/*
+ # Product: LDR
+*/
+
 #include "LightSensor.h"
 
-const int pinLS = 36; 
+const int pinLS = 36;       // LDR GPIO 
 
 LightSensor objLightSensor("Light", pinLS);
 
