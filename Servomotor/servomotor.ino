@@ -1,10 +1,15 @@
+/*
+ # Product: Servomotor
+ # Servo Library for ESP32: https://github.com/jkb-git/ESP32Servo
+*/
+
 #include <Servo.h>
 
 Servo servo;                        // create an object of type Servo
-int Giro = 0;
-#define Aumentar 'w'
-#define Disminuir 's'
-byte Dato;
+int spin = 0;
+#define increase 'w'
+#define decrease 's'
+byte data;
 
 void setup() {
   Serial.begin(115200);
@@ -14,25 +19,25 @@ void setup() {
 void loop() {
 
   while(Serial.available()){               
-    Dato = Serial.read();  
+    data = Serial.read();  
     
-    switch (Dato){
-    case Aumentar:   // increase
-      Giro++;
-      Giro = Giro>180?180:Giro;
+    switch (data){
+    case increase:   // increase
+      spin++;
+      spin = spin > 180 ? 180 : spin;
       /* With servo.write(degrees) we position the servo, it admits values from 0° to 180° */
-      servo.write(Giro);            
-      Serial.print("Giro: ");
-      Serial.println(Giro);
+      servo.write(spin);            
+      Serial.print("spin: ");
+      Serial.println(spin);
       break;
 
     case Disminuir:   // decrease
-      Giro--;
-      Giro = Giro<0?0:Giro;
+      spin--;
+      spin = spin < 0 ? 0 : spin;
       /* With servo.write(degrees) we position the servo, it admits values from 0° to 180° */
-      servo.write(Giro);
-      Serial.print("Giro: ");
-      Serial.println(Giro);
+      servo.write(spin);
+      Serial.print("spin: ");
+      Serial.println(spin);
       break;
     }            
 
