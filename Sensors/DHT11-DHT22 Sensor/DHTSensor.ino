@@ -1,3 +1,9 @@
+/*
+ # Product: DHT22 sensor
+ # Library DHT-sensor-library: https://github.com/adafruit/DHT-sensor-library
+ # More information about the library: https://learn.adafruit.com/dht
+*/
+
 #include "DHTSensor.h"
   
 const int pinDHT = 32; 
