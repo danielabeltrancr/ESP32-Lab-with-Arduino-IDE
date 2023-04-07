@@ -3,7 +3,6 @@
 #include <Arduino.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
-#include "Config.h"
 
 class SensorDS18B20 {
   public:
