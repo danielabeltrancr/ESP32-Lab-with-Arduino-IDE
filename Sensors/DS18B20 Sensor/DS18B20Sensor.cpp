@@ -29,7 +29,7 @@ float SensorDS18B20::captureWaterTemperature() {
   for (size_t i = 0; i < buses_length; i++) {
     waterTemp = _sensor[i].getTempCByIndex(0);
     if (waterTemp == DEVICE_DISCONNECTED_C) {
-      waterTemp = 0;
+      waterTemp = -127;
     }
     return waterTemp;
   }
