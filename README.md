@@ -10,5 +10,18 @@ Whether you are interested in monitoring the environment, creating automated con
 
 We invite you to explore and discover the various example codes available here. We hope this repository inspires you, helps you learn, and provides you with the necessary tools to take your projects to the next level. Enjoy programming and innovating with sensors using ESP32 and Arduino IDE!
 
-[Aquaponics Module](./Aquaponics Module)
+[Aquaponics Module](./AquaponicsModule)
 
+[CD47HC4067-MUX](./CD47HC4067-MUX)
+
+[EspNow](./EspNow)
+
+[LEDs](./LEDs)
+
+[SD Card Module](./SD-card-module)
+
+[Sensors](./Sensors)
+
+[Servomotor](./Servomotor)
+
+[WiFi](./WiFi
